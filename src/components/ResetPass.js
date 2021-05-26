@@ -32,7 +32,7 @@ const useStyle = makeStyles((theme) => ({
     margin: theme.spacing(3, 0, 2),
   },
 }));
-export const Login = ({ handlechange, onsubmit, formSwitch }) => {
+export const ResetPass = ({ handlechange, onsubmit, formSwitch }) => {
   const classes = useStyle();
   return (
     <Container>
@@ -42,7 +42,7 @@ export const Login = ({ handlechange, onsubmit, formSwitch }) => {
           <LockOpenIcon />
         </Avatar>
         <Typography component="h1" variant="h4">
-          Login
+          Reset Password
         </Typography>
         <form className={classes.form} submit>
           <TextField
@@ -82,12 +82,8 @@ export const Login = ({ handlechange, onsubmit, formSwitch }) => {
           </Button>
           <Grid container>
             <Grid item xs>
-              <Link
-                href="#"
-                onClick={() => formSwitch("reset")}
-                variant="body2"
-              >
-                Forget Password.
+              <Link href="" onClick={() => formSwitch("login")} variant="body2">
+                Back.
               </Link>
             </Grid>
           </Grid>
@@ -97,7 +93,7 @@ export const Login = ({ handlechange, onsubmit, formSwitch }) => {
   );
 };
 
-Login.propTypes = {
+ResetPass.propTypes = {
   handlechange: PropTypes.func.isRequired,
   onsubmit: PropTypes.func.isRequired,
   formSwitch: PropTypes.func.isRequired,
