@@ -32,7 +32,7 @@ const useStyle = makeStyles((theme) => ({
     margin: theme.spacing(3, 0, 2),
   },
 }));
-export const ResetPass = ({ handlechange, onsubmit, formSwitch }) => {
+export const ResetPass = ({ handlechange, formSwitch, handleOnsubmit }) => {
   const classes = useStyle();
   return (
     <Container>
@@ -44,7 +44,7 @@ export const ResetPass = ({ handlechange, onsubmit, formSwitch }) => {
         <Typography component="h1" variant="h4">
           Reset Password
         </Typography>
-        <form className={classes.form} submit>
+        <form className={classes.form} onSubmit={handleOnsubmit}>
           <TextField
             placeholder="Enter Email"
             variant="outlined"
@@ -76,7 +76,6 @@ export const ResetPass = ({ handlechange, onsubmit, formSwitch }) => {
             variant="contained"
             color="primary"
             className={classes.submit}
-            onSubmit={onsubmit}
           >
             Sign In
           </Button>
@@ -97,4 +96,5 @@ ResetPass.propTypes = {
   handlechange: PropTypes.func.isRequired,
   onsubmit: PropTypes.func.isRequired,
   formSwitch: PropTypes.func.isRequired,
+  handleOnsubmit: PropTypes.func.isRequired,
 };

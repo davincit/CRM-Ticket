@@ -44,7 +44,7 @@ export const Login = ({ handlechange, onsubmit, formSwitch }) => {
         <Typography component="h1" variant="h4">
           Login
         </Typography>
-        <form className={classes.form} submit>
+        <form className={classes.form} onSubmit={onsubmit}>
           <TextField
             placeholder="Enter Email"
             variant="outlined"
@@ -76,7 +76,6 @@ export const Login = ({ handlechange, onsubmit, formSwitch }) => {
             variant="contained"
             color="primary"
             className={classes.submit}
-            onSubmit={onsubmit}
           >
             Sign In
           </Button>

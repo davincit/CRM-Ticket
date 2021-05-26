@@ -37,6 +37,10 @@ export const Entry = () => {
     if (!e.target.value) {
     }
   };
+  //submit for change password
+  const handleResetPassSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div>
       {frmLogin === "login" && (
@@ -53,7 +57,7 @@ export const Entry = () => {
           handlechange={handleChange}
           email={email}
           pass={password}
-          onsubmit={handleSubmit}
+          handleOnsubmit={handleResetPassSubmit}
           formSwitch={frmSwicther}
         />
       )}
