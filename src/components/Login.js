@@ -20,7 +20,7 @@ const useStyle = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     boxShadow: "59px 49px 99px 1px #888", 
-    maxWidth:'60%',
+    maxWidth:'70%',
     margin:"auto",
     Height: "60%",
     padding:"50px"
