@@ -19,11 +19,11 @@ const useStyle = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    boxShadow: "0px -2px 32px 2px #979191 ", 
-    maxWidth:"60%",
-    margin:"auto",
+    boxShadow: "0px -2px 32px 2px #979191 ",
+    maxWidth: "60%",
+    margin: "auto",
     Height: "auto",
-    padding:"50px"
+    padding: "50px",
   },
   avatar: {
     margin: theme.spacing(1),
@@ -31,7 +31,7 @@ const useStyle = makeStyles((theme) => ({
   },
   form: {
     width: "70%",
-    margin:"auto", // Fix IE 11 issue.
+    margin: "auto", // Fix IE 11 issue.
     marginTop: theme.spacing(1),
   },
   submit: {
