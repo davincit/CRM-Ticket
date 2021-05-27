@@ -20,10 +20,10 @@ const useStyle = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     boxShadow: "0px -2px 32px 2px #979191 ", 
-    maxWidth:"60%",
+    maxWidth:"50%",
     margin:"auto",
     Height: "auto",
-    padding:"50px"
+    padding:"30px"
   },
   avatar: {
     margin: theme.spacing(1),
