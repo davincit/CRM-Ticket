@@ -19,13 +19,8 @@ const useStyle = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-<<<<<<< HEAD
-    boxShadow: "59px 49px 99px 1px #888", 
-    maxWidth:'70%',
-=======
     boxShadow: "0px -2px 32px 2px #979191 ", 
     maxWidth:"60%",
->>>>>>> f25b29f81967dccedd12e77ecbd48540bd36d49c
     margin:"auto",
     Height: "auto",
     padding:"50px"
