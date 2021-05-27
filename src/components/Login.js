@@ -19,9 +19,10 @@ const useStyle = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    boxShadow: "59px 49px 99px 1px #888", 
+    boxShadow: "0px -2px 32px 2px #979191 ", 
+    maxWidth:"60%",
     margin:"auto",
-    Height: "60%",
+    Height: "auto",
     padding:"50px"
   },
   avatar: {
@@ -29,7 +30,8 @@ const useStyle = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: "30%", // Fix IE 11 issue.
+    width: "70%",
+    margin:"auto", // Fix IE 11 issue.
     marginTop: theme.spacing(1),
   },
   submit: {
@@ -45,7 +47,7 @@ export const Login = ({ handlechange, onsubmit, formSwitch }) => {
         <Avatar className={classes.avatar}>
           <LockOpenIcon />
         </Avatar>
-        <Typography component="h1" variant="h4">
+        <Typography variant="h4" fontSize="10vw">
           Login
         </Typography>
         <form className={classes.form} onSubmit={onsubmit}>
