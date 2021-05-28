@@ -7,6 +7,7 @@ import {
   TableRow,
   Paper,
   makeStyles,
+  Typography,
 } from "@material-ui/core";
 
 const useStyles = makeStyles({
@@ -27,21 +28,52 @@ export default function TicketTabel({ tickets }) {
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>#</TableCell>
-            <TableCell align="center">Subjects</TableCell>
-            <TableCell align="right">Status</TableCell>
-            <TableCell align="right">OpenedDate</TableCell>
+            <TableCell>
+              {" "}
+              <Typography variant="h6" color="">
+                #{" "}
+              </Typography>
+            </TableCell>
+            <TableCell align="center">
+              <Typography variant="h6" color="primary">
+                Subject
+              </Typography>
+            </TableCell>
+            <TableCell align="center">
+              <Typography variant="h6" color="primary">
+                Status
+              </Typography>
+            </TableCell>
+            <TableCell align="center">
+              <Typography variant="h6" color="primary">
+                OpenedDate
+              </Typography>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {tickets.map((row) => (
             <TableRow key={row.id}>
               <TableCell component="th" scope="row">
-                {row.id}
+                <Typography variant="subtitle1" color="inherit">
+                  {row.id}
+                </Typography>
               </TableCell>
-              <TableCell align="right">{row.Subject}</TableCell>
-              <TableCell align="right">{row.status}</TableCell>
-              <TableCell align="right">{row.OpenedDate}</TableCell>
+              <TableCell align="left">
+                <Typography variant="subtitle1" color="inherit">
+                  {row.Subject}
+                </Typography>
+              </TableCell>
+              <TableCell align="left">
+                <Typography variant="subtitle1" color="inherit">
+                  {row.status}
+                </Typography>
+              </TableCell>
+              <TableCell align="left">
+                <Typography variant="subtitle1" color="inherit">
+                  {row.OpenedDate}
+                </Typography>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

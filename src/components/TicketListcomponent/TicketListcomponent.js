@@ -29,7 +29,12 @@ export default function TicketListcomponent({ change, tickets, data }) {
       </Grid>
       <Grid xs={12} sm={6}>
         <Typography>Search</Typography>
-        <TextField type="search" variant="outlined" onChange={change} />
+        <TextField
+          type="search"
+          variant="outlined"
+          onChange={change}
+          style={{ width: "400px" }}
+        />
       </Grid>
       <Grid xs={12} style={{ margin: "auto" }}>
         <TicketTabel tickets={tickets} />
