@@ -19,6 +19,11 @@ const useStyle = makeStyles(() => ({
 export default function Ticket() {
   const classes = useStyle();
   const ticket = tickets[0];
+
+  const handleOnChange = (e) => {};
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <Grid container spacing={3}>
       <Breadcrumb page="Ticket" />
@@ -46,7 +51,7 @@ export default function Ticket() {
         <MessageHistory msg={ticket.History} />
       </Grid>
       <Grid sm={6}>
-        <UpdateTicket />
+        <UpdateTicket change={handleOnChange} submit={handleOnSubmit} />
       </Grid>
     </Grid>
   );
