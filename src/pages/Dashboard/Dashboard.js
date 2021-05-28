@@ -9,7 +9,8 @@ import {
 import TableTicket from "../../components/TicketTabel/TicketTable";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import React from "react";
-
+import ticket from "../../components/TicketTabel/DUMMY.json";
+import TicketTabel from "../../components/TicketTabel/TicketTable";
 export default function Dashboard() {
   return (
     <div>
@@ -63,7 +64,7 @@ export default function Dashboard() {
           <Typography variant="h4">Recently added</Typography>
         </Grid>
         <Grid item xs={12}>
-          <TableTicket />
+          <TableTicket tickets={ticket} />
         </Grid>
       </Grid>
     </div>

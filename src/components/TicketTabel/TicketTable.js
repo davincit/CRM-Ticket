@@ -8,7 +8,6 @@ import {
   Paper,
   makeStyles,
 } from "@material-ui/core";
-import tickets from "./DUMMY.json";
 
 const useStyles = makeStyles({
   table: {
@@ -21,7 +20,7 @@ const useStyles = makeStyles({
     boxShadow: "#137986",
   },
 });
-export default function TicketTabel() {
+export default function TicketTabel({ tickets }) {
   const classes = useStyles();
   return (
     <TableContainer component={Paper}>
