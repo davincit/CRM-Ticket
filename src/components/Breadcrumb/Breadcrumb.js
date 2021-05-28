@@ -8,7 +8,7 @@ const useStyle = makeStyles(() => ({
     marginLeft: "15px",
   },
 }));
-export default function Breadcrumb({ pagename }) {
+export default function Breadcrumb({ page }) {
   const classes = useStyle();
   const handleClick = () => {};
   return (
@@ -22,12 +22,12 @@ export default function Breadcrumb({ pagename }) {
         <Typography className={classes.link}>Home</Typography>
       </Link>
       <Link
-        color={`${pagename ? "inherit" : "secondary"}`}
+        color={`${page ? "inherit" : "secondary"}`}
         underline="none"
         href="/"
         onClick={handleClick}
       >
-        {pagename}
+        {page}
       </Link>
     </Breadcrumbs>
   );

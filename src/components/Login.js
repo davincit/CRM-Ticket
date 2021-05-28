@@ -15,12 +15,12 @@ import React from "react";
 
 const useStyle = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(11),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     boxShadow: "0px -2px 32px 2px #979191 ",
-    maxWidth: "60%",
+    maxWidth: "45%",
     margin: "auto",
     Height: "auto",
     padding: "50px",

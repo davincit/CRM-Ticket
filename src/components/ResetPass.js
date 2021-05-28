@@ -9,18 +9,18 @@ import {
   TextField,
   Typography,
 } from "@material-ui/core";
-import LockOpenIcon from "@material-ui/icons/LockOpen";
+import RotateLeftIcon from "@material-ui/icons/RotateLeft";
 import PropTypes from "prop-types";
 import React from "react";
 
 const useStyle = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(11),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     boxShadow: "0px -2px 32px 2px #979191 ",
-    maxWidth: "60%",
+    maxWidth: "45%",
     margin: "auto",
     Height: "auto",
     padding: "50px",
@@ -44,7 +44,7 @@ export const ResetPass = ({ handlechange, formSwitch, handleOnsubmit }) => {
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
-          <LockOpenIcon />
+          <RotateLeftIcon />
         </Avatar>
         <Typography component="h1" variant="h4">
           Reset Password
