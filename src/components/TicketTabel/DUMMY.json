@@ -3,7 +3,27 @@
         "id":"1",
         "Subject":"Request for AUTH",
         "status":"client response pending",
-        "OpenedDate":"2021-06-21"
+        "OpenedDate":"2021-06-21",
+        "History" :[
+            {
+                "sender":"Joseph",
+                "date":"2021-06-21",
+                "message":"please call me!"
+                
+            },
+            {
+                "sender":"Admin",
+                "date":"2021-06-21",
+                "message":"I will call you!"
+                
+            },
+            {
+                "sender":"Joseph",
+                "date":"2021-06-21",
+                "message":"ok!"
+                
+            }
+        ]
     },
     
     {

@@ -21,7 +21,7 @@ export default function TicketListcomponent({ change, tickets, data }) {
       >
         <Button
           className={classes.buttonstyle}
-          variant="outlined"
+          variant="contained"
           color="primary"
         >
           Add New Ticket
