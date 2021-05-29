@@ -11,11 +11,12 @@ import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import React from "react";
 import ticket from "../../components/TicketTabel/DUMMY.json";
 import TicketTabel from "../../components/TicketTabel/TicketTable";
+import { Link } from "react-router-dom";
 export default function Dashboard() {
   return (
     <div>
       <Grid container spacing={3}>
-        <Breadcrumb pagename={"Dashboard"} />
+        <Breadcrumb page={"Dashboard"} />
         <Grid
           item
           xs={12}
@@ -27,17 +28,19 @@ export default function Dashboard() {
             justifyContent: "center",
           }}
         >
-          <Button
-            style={{
-              padding: "10px 30px",
-              fontSize: "2rem",
-              backgroundColor: "#567d8b",
-              justifyContent: "center",
-              marginTop: "10px",
-            }}
-          >
-            Add new ticket
-          </Button>
+          <Link to="/addticket" style={{ textDecoration: "none" }}>
+            <Button
+              style={{
+                padding: "10px 30px",
+                fontSize: "2rem",
+                backgroundColor: "#567d8b",
+                justifyContent: "center",
+                marginTop: "10px",
+              }}
+            >
+              Add new ticket
+            </Button>
+          </Link>
         </Grid>
       </Grid>
       <Grid container direction="column" justify="center" alignItems="center">

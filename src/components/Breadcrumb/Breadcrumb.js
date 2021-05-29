@@ -24,8 +24,9 @@ export default function Breadcrumb({ page }) {
       <Link
         color={`${page ? "inherit" : "secondary"}`}
         underline="none"
-        href="/"
-        onClick={handleClick}
+        href={`/${page}`}
+        // onClick={(e) => e.preventDefault()}
+        style={{ pointerEvents: "none" }}
       >
         {page}
       </Link>

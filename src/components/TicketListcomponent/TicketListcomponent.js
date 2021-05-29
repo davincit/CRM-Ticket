@@ -2,6 +2,7 @@ import { Button, Grid, TextField, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 import TicketTabel from "../../components/TicketTabel/TicketTable";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const useStyle = makeStyles(() => ({
   buttonstyle: {
@@ -19,13 +20,16 @@ export default function TicketListcomponent({ change, tickets, data }) {
         sm={6}
         style={{ margin: "auto", justifyItems: "center" }}
       >
-        <Button
-          className={classes.buttonstyle}
-          variant="contained"
-          color="primary"
-        >
-          Add New Ticket
-        </Button>
+        <Link to="/addticket" style={{ textDecoration: "none" }}>
+          {" "}
+          <Button
+            className={classes.buttonstyle}
+            variant="contained"
+            color="primary"
+          >
+            Add New Ticket
+          </Button>{" "}
+        </Link>
       </Grid>
       <Grid xs={12} sm={6}>
         <Typography>Search</Typography>

@@ -43,7 +43,7 @@ export default function AddTicketPage() {
   return (
     <div>
       <Grid container spacing={3}>
-        <Breadcrumb page="New Ticket" />
+        <Breadcrumb page="Addticket" />
         <Grid xs={12}>
           <AddTicket
             change={handleChange}

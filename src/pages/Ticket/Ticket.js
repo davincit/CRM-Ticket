@@ -3,7 +3,8 @@ import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import tickets from "../../components/TicketTabel/DUMMY.json";
 import MessageHistory from "../../components/MessageHistory/MessageHistory";
 import UpdateTicket from "../../components/UpdateTicket/UpdateTicket";
-
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 const useStyle = makeStyles(() => ({
   info: {
     marginTop: "150px",
@@ -18,12 +19,17 @@ const useStyle = makeStyles(() => ({
 }));
 export default function Ticket() {
   const classes = useStyle();
-  const ticket = tickets[0];
-
+  const [ticket, setTicket] = useState([]);
+  const { tid } = useParams();
   const handleOnChange = (e) => {};
   const handleOnSubmit = (e) => {
     e.preventDefault();
   };
+
+  useEffect(() => {
+    tickets.map((t) => (t.id === tid ? setTicket(t) : null));
+  }, [ticket]);
+
   return (
     <Grid container spacing={3}>
       <Breadcrumb page="Ticket" />
