@@ -9,21 +9,29 @@ import {
   TextField,
   Typography,
 } from "@material-ui/core";
-import LockOpenIcon from "@material-ui/icons/LockOpen";
+import RotateLeftIcon from "@material-ui/icons/RotateLeft";
 import PropTypes from "prop-types";
 import React from "react";
 
 const useStyle = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(11),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+<<<<<<< HEAD
     boxShadow: "0px -2px 32px 2px #979191 ", 
     maxWidth:"50%",
     margin:"auto",
     Height: "auto",
     padding:"30px"
+=======
+    boxShadow: "0px -2px 32px 2px #979191 ",
+    maxWidth: "45%",
+    margin: "auto",
+    Height: "auto",
+    padding: "50px",
+>>>>>>> 48f54cd87f491493cb157d496a4a86512c832ec9
   },
   avatar: {
     margin: theme.spacing(1),
@@ -44,7 +52,7 @@ export const ResetPass = ({ handlechange, formSwitch, handleOnsubmit }) => {
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
-          <LockOpenIcon />
+          <RotateLeftIcon />
         </Avatar>
         <Typography component="h1" variant="h4">
           Reset Password
@@ -61,18 +69,6 @@ export const ResetPass = ({ handlechange, formSwitch, handleOnsubmit }) => {
             type="email"
             margin="normal"
             autoComplete="email"
-            onChange={handlechange}
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            // required
-            fullWidth
-            name="password"
-            label="Password"
-            type="password"
-            id="password"
-            autoComplete="current-password"
             onChange={handlechange}
           />
           <Button
