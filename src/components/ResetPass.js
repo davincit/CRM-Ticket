@@ -19,19 +19,11 @@ const useStyle = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-<<<<<<< HEAD
-    boxShadow: "0px -2px 32px 2px #979191 ", 
-    maxWidth:"50%",
-    margin:"auto",
-    Height: "auto",
-    padding:"30px"
-=======
     boxShadow: "0px -2px 32px 2px #979191 ",
     maxWidth: "45%",
     margin: "auto",
     Height: "auto",
     padding: "50px",
->>>>>>> 48f54cd87f491493cb157d496a4a86512c832ec9
   },
   avatar: {
     margin: theme.spacing(1),
